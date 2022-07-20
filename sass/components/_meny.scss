@@ -1,0 +1,129 @@
+
+.meny{
+
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding: 48px 40px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--second-accent-color);
+    opacity: 1;
+    transform: translateX(100%);
+    &.is-open{
+        transform: translateX(0);
+    }
+    @media screen and (min-width: 768px) {
+        display: none;
+            }
+            @media screen and (min-width: 1200px) {
+            display: none;
+                }
+}
+
+.meny__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   position: absolute;
+   top: 10px;
+   right: 15px;
+   padding: 0;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+  
+  
+    @media screen and (min-width: 768px) {
+      display: none;
+       }
+       @media screen and (min-width: 1200px) {
+       display: none;
+       }
+}
+
+.meny__button.meny__close{
+  display: none;
+}
+.meny__button.is-open.meny__close{
+    display: block;
+   
+}
+.meny__button.is-open.meny__open{
+    display: none;
+}
+
+.meny__icon{
+    fill: currentColor;
+   &:focus,:hover{
+    fill: #2196f3; 
+   }
+  }
+
+
+.meny__link{
+    display: block;
+
+    
+    font-weight: 500;
+font-size: 40px;
+line-height: 1.18;
+color: #212121;
+&:hover,:focus{
+    color: #2196f3;
+}
+  }
+  .cur {
+    color: var(--accent-color);
+  }
+.contacts-meny{
+display: flex;
+flex-direction: column;
+align-content: flex-end;
+gap: 32px;
+margin-bottom: 64px;
+}
+.contacts-meny__tel{
+    font-weight: 500;
+font-size: 34px;
+line-height: 1.18;
+
+color: #2196F3;
+  }
+.contacts-meny__mail{
+    font-weight: 500;
+font-size: 24px;
+line-height: 1.17;
+color: #757575;
+}
+.meny-networks{
+    display: flex;
+    gap: 10px;
+}
+.meny-networks__link{
+    font-weight: 500;
+font-size: 18px;
+line-height: 1.22;
+
+color: #2196F3;
+
+border-width: 0 1px 0 0;
+border-style: solid;
+border-color: rgba(33, 33, 33, 0.2);
+padding-right: 10px;
+
+}
+.meny-networks__link:nth-child(4n) {
+    margin-right: 0;
+    border: none;
+  }
+.meny__item{
+
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}

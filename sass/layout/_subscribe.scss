@@ -1,0 +1,100 @@
+ .subscribe {
+
+
+  @media screen and (min-width: 768px) {
+   width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-left: auto;
+  
+  
+      }
+  }
+
+  .subscribe__box {
+    width: 100%;
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    }
+  }
+  .subscribe__strong {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  text-align: center;
+    color: #ffffff;
+    @media screen and (min-width: 1200px) {
+text-align: left;
+    }
+  }
+  
+  .subscribe__label {
+  display: block;
+
+  }
+  
+  .subscribe__input {
+    padding: 15px 16px;
+    background-color: transparent;
+    max-width: 450px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+  
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: var(--second-accent-color);
+  
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    outline: transparent;
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+      }
+      @media screen and (min-width: 1200px) {
+        margin-right: 12px;
+        margin-bottom: 0;
+        width: 358px;
+    }
+  }
+
+  .subscribe__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 200px;
+    height: 50px;
+    background-color: var(--accent-color);
+    color: var(--second-accent-color);
+    border: transparent;
+    padding: 10px 28px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+  margin: 0 auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    @media screen and (min-width: 1200px) {
+      margin-right: 12px;
+    }
+  }
+  .subscribe__icon {
+    fill: #ffffff;
+    margin-left: 10px;
+  }

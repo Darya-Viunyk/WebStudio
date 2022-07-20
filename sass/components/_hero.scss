@@ -1,0 +1,85 @@
+.hero {
+    background: #2f303a;
+    text-align: center;
+    padding: 118px 0;
+
+    @media screen and (min-width: 1200px){
+      padding: 118px 0;
+  }
+    @media screen and (min-width: 1200px){
+      padding: 200px 0;
+  }
+}
+  .overlay {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #000000;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-mobil1x.jpg);
+
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+       & {
+         background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobil2x.jpg);
+  }
+}
+      @media screen and (min-width: 768px){
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-tablet1x.jpg);
+      }
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+         & {
+           background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet2x.jpg);
+        
+      }
+    }
+      @media screen and (min-width: 1200px){
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../images/hero-destop1x.jpg);
+      }
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+         & {
+           background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-destop2x.jpg);
+      
+      }
+  }
+  }
+  .hero__title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    max-width: 360px;
+    
+    color: var(--second-accent-color);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    @media screen and(min-width:768) {
+      font-size: 26px;
+      line-height: 1.62;
+    }
+    @media screen and(min-width:1200) {
+      font-size: 44px;
+      line-height: 1.36;
+      max-width: 696px;
+    }
+  }
+ 
+
+
