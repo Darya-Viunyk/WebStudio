@@ -44,7 +44,7 @@
     }
       @media screen and (min-width: 1200px){
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/hero-destop1x.jpg);
+        url(../images/hero-destop1x.jpg);
       }
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
@@ -54,7 +54,7 @@
            background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-destop2x.jpg);
       
       }
-  }
+    }
   }
   .hero__title {
     margin-left: auto;
@@ -70,15 +70,13 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    @media screen and(min-width:768) {
-      font-size: 26px;
-      line-height: 1.62;
-    }
-    @media screen and(min-width:1200) {
+
+      @media screen and (min-width: 1200px) {
       font-size: 44px;
       line-height: 1.36;
       max-width: 696px;
-    }
+              }
+
   }
  
 
